@@ -1,0 +1,139 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #004080;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    display: flex;
+    height: 180px;
+    background-color: white;
+}
+
+.logo-container {
+    background-color: #004080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.contenido-central {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-central h1 {
+    font-size: 50px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: #004080;
+    margin: 0 0 15px 0;
+}
+
+.contenido-central nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+
+.contenido-central nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* CENTRO */
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 180px);
+}
+
+/* FORMULARIO */
+.crear-cuenta-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.crear-cuenta-container h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+/* LABEL OBJETIVO */
+.objetivo-label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* BOTONES DE OBJETIVO */
+.opciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.opciones button {
+    background-color: #b0d4e3;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opciones button:hover {
+    background-color: #8fc9dd;
+}
+
+/* BOTONES NAVEGACIÓN */
+.crear-btns {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* separa los botones */
+}
+
+
+.btn-atras,
+.btn-siguiente {
+    padding: 10px 20px;
+    background-color: #005e94;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-atras:hover,
+.btn-siguiente:hover {
+    background-color: #003f66;
+}

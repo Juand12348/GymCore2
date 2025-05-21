@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Styles_CrearCuenta.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="logo-container">
+            <img src="img/Logo.png" alt="Logo GYMCORE">
+        </div>
+        <div class="contenido-central">
+            <h1>GYMCORE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="Rutinas.html">RUTINAS</a></li>
+                    <li><a href="Aprendizaje.html">APRENDIZAJE</a></li>
+                    <li><a href="Preguntas.html">PREGUNTAS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FORMULARIO -->
+    <main class="centro">
+        <div class="crear-cuenta-container">
+            <h2><strong><em>CREAR <br> CUENTA</em></strong></h2>
+            <form action="/crear-cuenta" method="post">
+                <label for="nuevo-usuario">NOMBRE USUARIO</label>
+                <input type="text" id="nuevo-usuario" name="nuevo-usuario" placeholder="Ingresa tu usuario" required>
+
+                <label for="nueva-contrasena">CREAR CONTRASEÑA</label>
+                <input type="password" id="nueva-contrasena" name="nueva-contrasena" placeholder="Ingresa tu contraseña" required>
+
+                <label for="confirmar-contrasena">CONFIRMA CONTRASEÑA</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" placeholder="Ingresa nuevamente tu contraseña" required>
+
+                <div class="crear-btns">
+                    <a href="index.html"><button type="button" class="btn-atras">atrás</button></a>
+                    <a href="CrearCuentaSiguiente.html"><button type="button" class="btn-atras">siguiente</button></a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

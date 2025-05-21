@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/inicioSesion.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="logo-container">
+            <img src="img/Logo.png" alt="Logo GYMCORE">
+        </div>
+        <div class="contenido-central">
+            <h1>GYMCORE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="Rutinas.html">RUTINAS</a></li>
+                    <li><a href="Aprendizaje.html">APRENDIZAJE</a></li>
+                    <li><a href="Preguntas.html">PREGUNTAS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FORMULARIO -->
+    <main class="centro">
+        <div class="login-container">
+            <h2><strong><em>INICIAR <br> SESIÓN</em></strong></h2>
+            <form action="/login" method="post">
+                <label for="username">USUARIO</label>
+                <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" required>
+
+                <label for="password">CONTRASEÑA</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+
+                <button type="submit" class="login-btn">Ingresar</button>
+
+                <div class="links">
+                    <a href="RecuperarConstraseña.html">¿Olvidaste tu contraseña?</a>
+                    <a href="CrearCuenta.html" class="crear-cuenta">Crear cuenta</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
